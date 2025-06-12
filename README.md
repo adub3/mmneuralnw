@@ -1,59 +1,118 @@
-March Madness Game Predictor
+# 🏀 March Madness Game Predictor
 
-A neural network in PyTorch for predicting the outcome of NCAA March Madness basketball games. This project uses historical game and team statistics to create a binary classification problem that predicts whether the home team (Team A) will win a matchup.
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/) [![PyTorch](https://img.shields.io/badge/PyTorch-1.9-orange)](https://pytorch.org/) [![License: MIT](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
-📊 Data
+A **PyTorch**-based neural network for predicting NCAA March Madness basketball game outcomes. This model leverages historical game and team statistics to solve a binary classification problem: will **Team A** (home team) win?
 
-Source: Kaggle — March Madness Data by Nishaan Amin
+---
 
-Contents include:
+## 📋 Table of Contents
 
-Regular season and tournament game result data (scores, dates, seeds)
+1. [Data](#data)
+2. [Features](#features)
+3. [Project Structure](#project-structure)
+4. [Installation](#installation)
+5. [Usage](#usage)
+6. [Model & Training](#model--training)
+7. [Evaluation Metrics](#evaluation-metrics)
+8. [Contributing](#contributing)
+9. [License](#license)
+10. [Acknowledgements](#acknowledgements)
 
-Team statistics (offensive/defensive efficiency, tempo, etc.)
+---
 
-Format: CSV files; each row is one game with numeric features and a binary label (win = 1 for Team A, else 0).
+## 📊 Data
 
-🧩 Features
+* **Source:** Kaggle — [March Madness Data by Nishaan Amin](https://www.kaggle.com/datasets/nishaanamin/march-madness-data)
+* **Files:** CSVs containing:
 
-Team seeds and rankings
+  * Regular season & tournament game results (scores, dates, seeds)
+  * Team metrics (offensive/defensive efficiency, tempo, etc.)
+* **Format:** Each row = one game, with numeric features and a binary label:
 
-Points scored, points allowed per game
+  * `win = 1` if Team A wins, else `0`.
 
-Advanced metrics (offensive/defensive efficiency)
+---
 
-Recent form (last 5 games) - Optional sequential input
+## 🧩 Features
 
-🛠️ Project Structure 
+* **Seeds & Rankings** — Tournament seed numbers, AP/Coaches polls
+* **Scoring** — Points scored & allowed per game
+* **Advanced Metrics** — Efficiency ratings, tempo, turnover rates
+* **Form** — Recent form (e.g., last 5 games) via optional sequential inputs
 
+---
+
+## 🛠️ Project Structure
+
+```
 TBA
+```
 
-⚙️ Installation
+---
 
-TBA
+## ⚙️ Installation
 
-🚀 Usage
+1. **Clone the repo**
 
-TBA
+   ```bash
+   git clone https://github.com/yourusername/march-madness-predictor.git
+   cd march-madness-predictor
+   ```
+2. **Create & activate a virtual environment**
 
-📈 Model & Training
+   ```bash
+   python -m venv venv
+   source venv/bin/activate    # macOS/Linux
+   venv\\Scripts\\activate   # Windows
+   ```
+3. **Install dependencies(TBA)**
 
-TBA
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. **Download data** and move CSVs into `data/raw/`.
 
-📊 Evaluation Metrics
+---
 
-TBA
+## 🚀 Usage
 
-🤝 Contributing
+**TBA**
 
-Contributions are welcome! Please open issues for bug reports or feature requests, and submit pull requests for enhancements.
+---
 
-📜 License
+## 📈 Model & Training (TBA)
 
-This project is released under the MIT License.
 
-🙏 Acknowledgements
+---
 
-Dataset by Nishaan Amin on Kaggle
+## 📊 Evaluation Metrics (Also TBA)
 
-PyTorch community for examples and documentation
+* **Accuracy**
+* **ROC AUC**
+* **Precision / Recall / F1-score**
+
+---
+
+## 🤝 Contributing
+
+Contributions welcome! Please:
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature-name`)
+3. Commit your changes (`git commit -m 'Add feature'`)
+4. Push to your branch (`git push origin feature-name`)
+5. Open a Pull Request
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License**. See [LICENSE](LICENSE) for details.
+
+---
+
+## 🙏 Acknowledgements
+
+* **Dataset**: March Madness Data by Nishaan Amin (Kaggle)
+* **Framework**: PyTorch community & documentation
